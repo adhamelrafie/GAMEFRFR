@@ -1,5 +1,5 @@
 package game.engine.dataloader;
 
 public class Wala {
- String wala="walalaawlalaa???";
+ String wala="walalaawlala5555";
 }
