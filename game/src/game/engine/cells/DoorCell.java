@@ -1,0 +1,51 @@
+package game.engine.cells;
+
+import game.engine.Role;
+
+import game.engine.interfaces.*;
+
+public class DoorCell extends Cell implements CanisterModifier{
+	
+		private final Role role; //READ
+		
+		private final int energy; //READ
+		
+		private boolean activated; //READ WRITE
+		
+		//Setters & Getters
+		
+		public Role getRole() {
+			return role;
+		}
+		
+		
+		
+		
+		public int getEnergy() {
+			return energy;
+		}
+		
+		
+		
+		
+		public boolean isActivated() {
+			return activated;
+		}
+		
+		public void setActivated(boolean activated) {
+			this.activated = activated;
+		}
+		
+		//Constructor
+		public DoorCell(String name, Role role, int energy) {
+			super(name);
+			
+			this.role = role;
+			
+			this.energy = energy;
+			
+			this.activated = false;
+		}
+		
+		
+}
